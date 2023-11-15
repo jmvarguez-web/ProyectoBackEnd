@@ -3,13 +3,14 @@ import {pool} from '../db.js';
 import {
     getLibros
     ,getLibro
+    ,getLibrosPalabra
     ,deleteLibro
     ,createLibro
     ,updateLibro
 } from "../controllers/libros.controllers.js";
 
 const router = Router();
-
+router.get("/libros/palabra/:palabra", getLibrosPalabra);
 // GET all Libros
 router.get("/libros", getLibros);
 

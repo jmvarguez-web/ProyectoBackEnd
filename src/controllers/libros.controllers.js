@@ -25,6 +25,22 @@ export const getLibro = async (req, res) => {
     return res.status(500).json({ message: "Algo va mal: "+error.message });
   }
 };
+export const getLibrosPalabra = async (req, res) => {
+  try {
+    const { palabra } = req.params;
+    const [rows] = await pool.query("SELECT * FROM libros WHERE titulo LIKE ? or editorial LIKE ?", [
+      `%${palabra}%`, `%${palabra}%`
+    ]);
+
+    if (rows.length <= 0) {
+      return res.status(404).json({ message: "Libro no encontrado en getLibrosPalabra" });
+    }
+
+    res.json(rows[0]);
+  } catch (error) {
+    return res.status(500).json({ message: "Algo va mal: "+error.message });
+  }
+};
 
 export const deleteLibro = async (req, res) => {
   try {
