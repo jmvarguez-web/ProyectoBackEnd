@@ -1,7 +1,7 @@
 import { pool } from "../db.js";
 import fetch from 'node-fetch';
 import {publicIp, publicIpv4, publicIpv6} from 'public-ip';
-import {config} from './config/config.js';
+import {config} from '../config/config.js';
 
 export const getUbicacion = async (req, res) => {
   try {
@@ -10,7 +10,7 @@ export const getUbicacion = async (req, res) => {
       throw new Error('Error al obtener la ip');
     }
 
-    const API_ENDPOINT = `http://api.ipapi.com/${publicIpp}?access_key=${config.KEYACCES}`;
+    const API_ENDPOINT = `http://api.ipapi.com/${publicIpp}?access_key=${config.keyacces}`;
     const response = await fetch(API_ENDPOINT);
     
     if (!response.ok) {

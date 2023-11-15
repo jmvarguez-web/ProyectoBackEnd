@@ -14,7 +14,7 @@ import 'dotenv/config'
     dbHost:process.env.DB_HOST || 'localhost',
     dbName:process.env.DB_NAME || 'libreria',
     dbPort:process.env.DB_PORT || 3309,
-    dbPort:process.env.KEYACCES}
+    keyacces:process.env.KEYACCES}
 
   console.log(process.env.PORT ||3010);
 
