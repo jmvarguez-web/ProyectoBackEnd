@@ -1,0 +1,169 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "BACK_END_LIBROS",
+    "dateExported": "2023-11-19T18:28:22.654Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "59333486-cb4c-4361-8748-bf768a223c26",
+            "colId": "b98d9de3-2f4a-4027-ba8d-1da939d3b787",
+            "containerId": "",
+            "name": "NUEVO LIBRO",
+            "url": "https://proyectobackend-production-6540.up.railway.app/api/libros",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-19T16:17:56.686Z",
+            "modified": "2023-11-19T16:17:56.686Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 637,\n  \"isbn\": \"EAN : xxxxxx8627262\",\n  \"titulo\": \"xxxxxxxxxxxxxxxx\",\n  \"autor_id\": 1,\n  \"paginas\": 200,\n  \"fecha_publicacion\": \"2023-07-30\",\n  \"anio\": 202,\n  \"editorial\": \"xxxxxxxx\",\n  \"edicion\": \"yyyyyyyyy\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c472a310-d2cc-4555-96eb-93bf268a0edf",
+            "colId": "b98d9de3-2f4a-4027-ba8d-1da939d3b787",
+            "containerId": "",
+            "name": "ELIMINAR_LIBRO",
+            "url": "https://proyectobackend-production-6540.up.railway.app/api/libros/637",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2023-11-19T16:18:35.142Z",
+            "modified": "2023-11-19T17:57:37.067Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bebf5d5e-bfd1-4447-b73c-4bad62b0eb97",
+            "colId": "b98d9de3-2f4a-4027-ba8d-1da939d3b787",
+            "containerId": "",
+            "name": "LISTAR_LIBRO",
+            "url": "https://proyectobackend-production-6540.up.railway.app/api/libros/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-19T16:19:32.450Z",
+            "modified": "2023-11-19T16:19:32.450Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1ed4612e-8b9e-4d52-881f-14c9555355ef",
+            "colId": "b98d9de3-2f4a-4027-ba8d-1da939d3b787",
+            "containerId": "",
+            "name": "VER_LIBRO",
+            "url": "https://proyectobackend-production-6540.up.railway.app/api/libros/2",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-19T16:20:09.254Z",
+            "modified": "2023-11-19T16:20:09.254Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f0484d62-fa01-460d-a86c-3afc9f6ed457",
+            "colId": "b98d9de3-2f4a-4027-ba8d-1da939d3b787",
+            "containerId": "",
+            "name": "BUSCAR_PALABRA_LIBRO",
+            "url": "https://proyectobackend-production-6540.up.railway.app/api/libros/palabra/centro",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-11-19T16:21:29.858Z",
+            "modified": "2023-11-19T16:21:29.858Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c7af1c4b-f340-4fe2-9071-175095726422",
+            "colId": "b98d9de3-2f4a-4027-ba8d-1da939d3b787",
+            "containerId": "",
+            "name": "EDITAR_LIBRO",
+            "url": "https://proyectobackend-production-6540.up.railway.app/api/libros/648",
+            "method": "PATCH",
+            "sortNum": 60000,
+            "created": "2023-11-19T16:23:17.504Z",
+            "modified": "2023-11-19T16:23:17.504Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " { \n\"isbn\": \"mod : 9788418627262\",\n\"titulo\": \"modxxxxxxxxxxxxxxxxxxxxxx\",\n\"autor_id\": 12,\n\"paginas\": 3614,\n\"fecha_publicacion\": \"2023-07-30\",\n\"anio\": 202,\n\"editorial\": \"modxxxxxxxxxxxxxxxxxxxxxx\",\n\"edicion\": \"modxxxxxxxxxxxxxxxxxxxxxx\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "daed5a7e-19b6-436f-bf8e-dd112b87bc0b",
+            "colId": "b98d9de3-2f4a-4027-ba8d-1da939d3b787",
+            "containerId": "",
+            "name": "LISTAR_AUTORES",
+            "url": "https://proyectobackend-production-6540.up.railway.app/api/autores/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-11-19T16:24:10.256Z",
+            "modified": "2023-11-19T16:24:10.256Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "71328414-963c-47ae-8248-51894ad96e80",
+            "colId": "b98d9de3-2f4a-4027-ba8d-1da939d3b787",
+            "containerId": "",
+            "name": "NUEVO_AUTOR",
+            "url": "https://proyectobackend-production-6540.up.railway.app/api/autores/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-11-19T16:24:35.518Z",
+            "modified": "2023-11-19T16:24:35.518Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"Nombre\": \"XXXXXXX\",\n    \"Apellido\": \"YYYYYYY\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8e3ffef1-ae6f-4983-a363-9b1e846c1a66",
+            "colId": "b98d9de3-2f4a-4027-ba8d-1da939d3b787",
+            "containerId": "",
+            "name": "EDITAR_AUTOR",
+            "url": "https://proyectobackend-production-6540.up.railway.app/api/autores/564",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-11-19T16:25:10.326Z",
+            "modified": "2023-11-19T16:25:10.326Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Nombre\": \"MODXXXXXXX\",\n  \"Apellido\": \"MODYYYYYYY\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c7d9475d-b2e2-470c-91e6-1d26f97fe3dd",
+            "colId": "b98d9de3-2f4a-4027-ba8d-1da939d3b787",
+            "containerId": "",
+            "name": "API_UBICACION",
+            "url": "https://proyectobackend-production-6540.up.railway.app/api/ubicacion",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-11-19T16:25:45.097Z",
+            "modified": "2023-11-19T16:25:45.097Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
